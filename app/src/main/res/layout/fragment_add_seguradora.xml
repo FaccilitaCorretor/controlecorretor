@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:scrollbars="vertical">
+
+            <android.faccilitacorretor.leoduda.com.br.faccilitacorretor.component.RoundedImageView
+                android:id="@+id/cadastrarLogoSeguradoraImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center|top"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/imv_foto_android_2" />
+
+            <EditText
+                android:id="@+id/cadastrarSeguradoraNomeEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="100dp"
+                android:hint="Nome"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/cadastrarSeguradoraButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/toolbar_rounded_corners"
+                android:text="Confirmar"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/excluir_item_segurado_list_menu"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="Excluir Item"/>
+
+    <item
+        android:id="@+id/adicionar_apolice_item_segurado_list_menu"
+        android:icon="@drawable/ic_note_add_black_24dp"
+        android:title="Excluir Item"/>
+</menu>

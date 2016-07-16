@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="APÓLICE"
+                android:textSize="@dimen/abc_text_size_large_material" />
+
+            <EditText
+                android:id="@+id/escolhaSeguradoEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_segurado_24dp"
+                android:hint=" Segurado"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/escolhaSeguradoraEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_seguradora_24dp"
+                android:hint=" Seguradora"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/numeroApoliceEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_apolice_24dp"
+                android:hint=" Número da Apólice"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/tipoApoliceEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_check_box_black_24dp"
+                android:hint=" Tipo de Apólice" />
+
+            <EditText
+                android:id="@+id/inicioVigenciaEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_calendar_black_24dp"
+                android:hint=" Início da Vigência"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/fimVigenciaEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_calendar_black_24dp"
+                android:hint=" Final da Vigência"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/valorPremioEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_attach_money_black_24dp"
+                android:hint=" Valor do Prêmio"
+                android:inputType="date" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="ALERTA"
+                android:textSize="@dimen/abc_text_size_large_material" />
+
+            <EditText
+                android:id="@+id/dataAlertaEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_calendar_black_24dp"
+                android:hint=" Data do alerta"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/horaAlertaEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_alerta_24dp"
+                android:hint=" Hora do alerta"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/cadastrarApoliceButton"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/toolbar_rounded_corners"
+                android:text="Confirmar"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

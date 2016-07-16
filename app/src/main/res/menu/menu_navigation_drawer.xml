@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/item_drawer_home"
+            android:icon="@drawable/ic_home_24dp"
+            android:title="@string/drawer_home" />
+        <!--item
+            android:id="@+id/item_drawer_alerta"
+            android:icon="@drawable/ic_alerta_24dp"
+            android:title="@string/drawer_alertas" /-->
+        <item
+            android:id="@+id/item_drawer_apolice"
+            android:icon="@drawable/ic_apolice_24dp"
+            android:title="@string/drawer_apolices" />
+        <item
+            android:id="@+id/item_drawer_segurado"
+            android:icon="@drawable/ic_segurado_24dp"
+            android:title="@string/drawer_segurados" />
+        <item
+            android:id="@+id/item_drawer_seguradora"
+            android:icon="@drawable/ic_seguradora_24dp"
+            android:title="@string/drawer_seguradoras" />
+        <item
+            android:id="@+id/item_drawer_corretor"
+            android:icon="@drawable/ic_corretor_24dp"
+            android:title="@string/drawer_corretor" />
+        <item
+            android:id="@+id/item_drawer_grafico"
+            android:icon="@drawable/ic_grafico_24dp"
+            android:title="@string/drawer_grafico" />
+
+    </group>
+
+    <item android:title="@string/sub_drawer_configuracoes">
+         <menu>
+             <item
+                 android:id="@+id/item_drawer_ajuste"
+                 android:icon="@drawable/ic_ajustes_24dp"
+                 android:title="@string/drawer_ajustes" />
+         </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:scrollbars="vertical">
+
+            <android.faccilitacorretor.leoduda.com.br.faccilitacorretor.component.RoundedImageView
+                android:id="@+id/fotoPerfilImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center|top"
+                android:layout_marginEnd="1dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/imv_foto_android_2" />
+
+            <EditText
+                android:id="@+id/nomeCorretorEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Nome"
+                android:inputType="text"
+                android:src="@style/Theme.CadastroTheme"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+            <EditText
+                android:id="@+id/emailCorretorEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <EditText
+                android:id="@+id/telefoneCorretorEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Susep"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <EditText
+                android:id="@+id/celularCorretorEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Celular"
+                android:inputType="phone"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/confirmarCorretorButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/toolbar_rounded_corners"
+                android:text="Confirmar"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <!-- LOADING -->
+            <ProgressBar
+                android:id="@+id/progresBarCorretor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
